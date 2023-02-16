@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<style>
+   
+    table,th,td{
+        border-collapse: collapse;
+        padding: 5px;
+        text-align: center;
+    }
+    table{
+        border: 2px solid red;
+        width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+   
+    form { 
+        width: 300px;
+    margin: 0 auto;
+    }
+        
+    
+    input{
+        margin:2%;
+    }
+
+</style>
+<body>
+
+    <h1 style="text-align:center">Student Resgistration Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="name" placeholder="Name" name="name"/>
+    
+        <br>
+        <label for="phone">Phone No:</label>
+        <input type="number" placeholder="Phone Number" name="phone"/>
+        <br>
+        <label for="DoB">Date of Birth:</label>
+        <input type="date" placeholder="DoB" name="DoB"/>
+        <br>
+        <label for="address">Address:</label>
+        <br>
+        <textarea cols="30" rows="5" name="address"></textarea>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" value="Male" name="gender">
+        <input type="radio" value="Female" name="gender">
+        <br>
+        <label for="city">City :</label>
+        <select name = "city">
+            <option value = "Select city" selected>Select city</option>
+            <option value = "hyderabad">Hyderabad</option>
+            <option value = "delhi">Delhi</option>
+            <option value = "mumbai">Mumbai</option>
+         </select>
+         <br>
+         
+        <label for="hobby">Hobbies:</label>
+        <br>
+        <input type = "checkbox" name = "music" value = "off"> Music <br>
+        <input type = "checkbox" name = "sports" value = "off"> Sports<br>
+        <input type = "checkbox" name = "reading" value = "off"> Reading<br>
+        <input type = "checkbox" name = "hobby" value = "off"> Hobby<br>
+        <input type = "checkbox" name = "hobby" value = "off"> Hobby<br>
+
+        <div><input type="submit" value="submit">
+            <input type="button" value="reset"></div>
+        
+
+    </form>
+
+    <h3 style="text-align:center">Student Records</h3>
+
+    <table>
+        <tr>
+          <th>S.No</th>
+          <th>Name.</th>
+          <th>Phone No.</th>
+          <th>Gender</th>
+          <th>DOB</th>
+          <th>Interests</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Akash</td>
+          <td>123-4-567</td>
+          <td>Male</td>
+          <td>12/12/1996</td>
+          <td>
+            Music<br>Dance<br>Cooking<br></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Akash</td>
+          <td>122-2-567</td>
+          <td>Male</td>
+          <td>12/12/1996</td>
+          <td>Dance<br>Travel</td>
+        </tr>
+    </table>
+      
+
+</body>
+</html>
